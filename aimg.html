@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria de Imagens</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f1efef;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 100px;
+    }
+
+    .galeria img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.09);
+    }
+  </style>
+</head>
+<body>
+  <h1>Epilção de pernas</h1>
+  
+  <div class="galeria">
+    <img src="pernas01.webp" alt="Foto 1">
+    <img src="pernas02.webp" alt="Foto 2">
+    <img src="pernas03.webp" alt="Foto 3">
+    <img src="sobrancelhas04.webp" alt="Foto 4">
+  </div>
+</body>
+</html>
